@@ -16,7 +16,7 @@ class GameSetting: ObservableObject {
     @Published var numOfColumns = 14
     
     // the number of rows on the board
-    @Published var numberOfBombs = 22
+    @Published var numberOfBombs = 25
     
     var squareSize: CGFloat {
         UIScreen.main.bounds.width/CGFloat(numOfColumns)
