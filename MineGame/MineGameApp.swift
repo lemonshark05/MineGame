@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MineGameApp: App {
+    var gameSettings = GameSetting()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BoardView()
+                .environmentObject(Game(from: gameSettings))
         }
     }
 }
